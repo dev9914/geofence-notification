@@ -1,0 +1,42 @@
+# Repository-wide ignore rules.
+#
+# The two subprojects keep their own .gitignore files; this one covers
+# cross-cutting artifacts and closes the gaps in them.
+
+# Dependencies
+node_modules/
+
+# Build output and test coverage
+dist/
+dist-ssr/
+coverage/
+
+# Local environment files.
+#
+# `.env` files hold real credentials — backend/.env contains the live MongoDB Atlas
+# connection string — and must never be committed. The committed templates are the
+# `.env.example` files, which the negation below keeps tracked.
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Caches and incremental build state
+.vitest-cache/
+*.tsbuildinfo
+
+# Editor and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.sw?
