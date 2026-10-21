@@ -15,10 +15,8 @@ export interface GeofenceConfig {
 export const DEFAULT_GEOFENCE: GeofenceConfig = Object.freeze({
   id: 'demo-geofence',
   name: 'Demo Geofence',
-  // latitude: 18.56788997616755,
-  // longitude: 73.91932741340476,
-  latitude: 28.393207548892025,
-  longitude: 76.48247237761383,
+  latitude: 18.56788997616755,
+  longitude: 73.91932741340476,
   radiusMeters: 30,
 });
 
